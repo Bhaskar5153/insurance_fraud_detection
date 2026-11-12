@@ -1,0 +1,16 @@
+pandas
+sqlalchemy
+psycopg[binary]
+matplotlib
+seaborn
+plotly
+scikit-learn
+fastapi
+python-dotenv
+pydantic-settings
+xgboost
+uvicorn
+joblib
+httpx
+nbformat
+jupyterlab
