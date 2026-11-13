@@ -1,0 +1,11 @@
+actual_fraud,Correct,predicted_fraud,fraud_score,risk_level
+0,True,0,0.4719,Low
+0,True,0,0.0006,Low
+0,True,0,0.0015,Low
+0,True,0,0.0013,Low
+0,True,0,0.0016,Low
+0,False,1,0.5601,High
+0,True,0,0.0008,Low
+0,False,1,0.8445,High
+1,True,1,0.95,High
+0,False,1,0.787,High

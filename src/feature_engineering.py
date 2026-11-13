@@ -76,7 +76,7 @@ class FeatureEngineering(BaseEstimator, TransformerMixin):
 
 if __name__ == "__main__":
     df = DataIngestion().load_data()
-    processor = DataPreprocessing()
+    processor = DataPreprocessing(df)
 
     X, y = processor.prepare_data()
 

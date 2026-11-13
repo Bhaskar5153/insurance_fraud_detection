@@ -1,0 +1,11 @@
+{
+    "model": "XGBoost",
+    "algorithm": "XGBClassifier",
+    "training_records": 7000,
+    "validation_ records": 1500,
+    "test_records": 1500,
+    "scale_pos_weight": 10.804384485666105,
+    "validation_pr_auc": 0.750540285400285,
+    "validation_roc_auc": 0.9682938314236382,
+    "test_evaluated": false
+}

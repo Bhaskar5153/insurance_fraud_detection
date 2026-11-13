@@ -7,6 +7,8 @@ from sklearn.impute import SimpleImputer
 
 from src.data_ingestion import DataIngestion
 
+import ipdb
+
 class DataPreprocessing:
     TARGET = "Is_Fraud"
     DATE_COLUMN = "Claim_Submission_Date"
@@ -134,10 +136,15 @@ class DataPreprocessing:
         X_train_processed = preprocessor.fit_transform(X_train)
         X_valid_processed = preprocessor.fit_transform(X_valid)
         X_test_processed = preprocessor.fit_transform(X_test)
+        feature_names = preprocessor.get_feature_names_out()
+        for idx, feature_name in enumerate(feature_names):
+            print(f"{idx}: {feature_name}")
+        ipdb.set_trace()
 
         print(X_train_processed.shape)
         print(X_valid_processed.shape)
         print(X_test_processed.shape)
+        print(X_train_processed.ndim)
 
         return {
             "X_train": X_train,
